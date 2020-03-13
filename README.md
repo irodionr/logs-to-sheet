@@ -1,6 +1,6 @@
 # logs-to-sheet
 
-A small program that uploads logs from logs.tf into a google spreadsheet.
+A small program that uploads logs from logs.tf into a Google Sheet
 
 ## Setup
 
@@ -13,7 +13,17 @@ A small program that uploads logs from logs.tf into a google spreadsheet.
 ## Usage
 
 1. Open `config.json` and enter proper inputs instead of placeholder examples:  
-  `sheet` - URL to Google Sheet  
+  `sheet` - URL to publicly available Google Sheet  
   `id` - your SteamID (you can find one on your ETF2L profile page, for example)  
   `logs` - any amount of comma-separated URLs to logs that you want to upload
 2. Run `logs-to-sheet.exe` (or run `logs-to-sheet.py` directly from the command line if you have python installed)
+
+Program will create `Logs` worksheet (or use an already existing one) and output the logs in the following format:  
+```
+| Date:   |
+| Map:    |
+| Result: |
+| ID      | Player | Kills | KPM | Assists | APM | Deaths | DeathsPM | Damage | DPM | DT | DTM | Heals | HPM | KA/D | K/D | Airshots | Headshots | Backstabs | Captures
+...
+```
+
