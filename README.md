@@ -13,7 +13,7 @@ A small program that uploads logs from logs.tf into a Google Sheet
 ## Usage
 
 1. Open `config.json` and enter proper inputs instead of placeholder examples:  
-  `sheet` - URL to publicly available Google Sheet  
+  `sheet` - URL to available Google Sheet (make sheet publicly available or give access to `"client_email"` from `creds.json`)  
   `id` - your SteamID (you can find one on your ETF2L profile page, for example)  
   `logs` - any amount of comma-separated URLs to logs that you want to upload
 2. Run `logs-to-sheet.exe` (or run `logs-to-sheet.py` directly from the command line if you have python installed)
